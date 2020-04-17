@@ -1,0 +1,34 @@
+.card{
+  background-image: linear-gradient(#8DD1D9,#8CD0D8 );
+    box-shadow: 2px 12px 22px -2px #0000005c;
+    padding: 30px 20px;
+    color: #fff;
+}
+.temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+.current-temperature {
+  font-size: 100px;
+  padding: 10px;
+}
+.city{
+  text-transform: uppercase;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.symbol {
+  font-size: 50px;
+}
+@media(min-width: 767px){
+  .card{
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,8 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+svg {
+  margin: 0px 10px;
+}
