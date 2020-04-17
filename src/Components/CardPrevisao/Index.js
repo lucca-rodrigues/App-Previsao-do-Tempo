@@ -22,12 +22,12 @@ export default class Previsao extends Component {
   informations = async () => {
     const response = await api.get("/data/2.5/weather?q=London,uk&APPID=3c8ebd83a7ead58e00379146dcb942c0");
 
-    this.setState({infoTime: response.data});
-    this.setState({country: response.data.sys.country});
-    this.setState({weather: response.data.weather[0].description});
-    this.setState({temp: response.data.main.temp.toString().substring(0, 2)});
-    this.setState({tempMin: response.data.main.temp_min.toString().substring(0, 2)});
-    this.setState({tempMax: response.data.main.temp_max.toString().substring(0, 2)});
+    this.setState({infoTime: response.data, 
+      country: response.data.sys.country, 
+      weather: response.data.weather[0].description,
+      temp: response.data.main.temp.toString().substring(0, 2), 
+      tempMin: response.data.main.temp_min.toString().substring(0, 2),
+      tempMax: response.data.main.temp_max.toString().substring(0, 2)});
 
     //console.log(response.data.main.temp.toString().substring(0, 2));
   }
